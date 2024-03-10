@@ -1,4 +1,5 @@
 streamlit
+sklearn.preprocessing
 scikit-learn
 pandas
 numpy
