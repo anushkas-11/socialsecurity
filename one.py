@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
 from sklearn.preprocessing import StandardScaler
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
@@ -284,7 +283,7 @@ elif tabs == "Trustworthiness":
         'fake': [0]
         
         })
-        from sklearn.preprocessing import StandardScaler
+        
 
 
     # 2. Scale the input data using the same scaler
@@ -297,7 +296,7 @@ elif tabs == "Trustworthiness":
         return trustworthiness_score[0][0]*100
 
     st.markdown("<h2 style='text-align: center;'>Trustworthiness Score : </h2>", unsafe_allow_html=True)
-    
+    st.button('The user may be trusted...But this is a suggestive algorithm\n Caution Must be Practised')
     import plotly.graph_objs as go
 
     # Define gauge parameters
@@ -342,7 +341,6 @@ elif tabs == "Trustworthiness":
 
 
     st.plotly_chart(fig)
-    st.button('The user may be trusted...But this is a suggestive algorithm\n Caution Must be Practised')
 
 
 
